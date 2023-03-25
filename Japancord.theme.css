@@ -1,76 +1,90 @@
-/* Main Background */
-body {
-  background-image: url("japan.jpg");
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+
+:root {
+  --main-color: #e91e63; /* change this to your preferred color */
+}
+
+/* Background image */
+.appMount-3VJmYg {
+  background-image: url(https://example.com/japan.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
-/* Channel List */
-div[class^="container-"] {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+/* Change the font */
+*,
+*::before,
+*::after {
+  font-family: 'Noto Sans JP', sans-serif !important;
 }
 
-div[class^="container-"] div[class^="scrollerInner-"]::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.4);
+/* Change the text color */
+.textArea-12jD-V,
+.content-98HsJk,
+.channelName-3k-EBI,
+.title-29uC1r {
+  color: var(--main-color) !important;
 }
 
-/* Chat Window */
-div[class^="messagesWrapper-"] {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+/* Change the links color */
+.anchor-3Z-8Bb,
+.anchorUnderlineOnHover-2ESHQB {
+  color: var(--main-color) !important;
 }
 
-/* Member List */
-div[class^="members-"] {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+/* Change the hover color */
+.anchor-3Z-8Bb:hover,
+.anchorUnderlineOnHover-2ESHQB:hover {
+  color: #fff !important;
 }
 
-/* Server List */
-div[class^="wrapper-"] {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+/* Change the user's status colors */
+.status-online,
+.status-idle,
+.status-dnd,
+.status-streaming {
+  color: var(--main-color) !important;
 }
 
-/* Message Input */
-div[class^="editor-"] {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+/* Change the background of the active tab */
+.selected-3s45Ha,
+.tabBarSelected-1vrmpa,
+.tabBarSelected-1vrmpa:hover {
+  background-color: rgba(233, 30, 99, 0.2) !important;
 }
 
-/* Text Input */
-div[class^="textArea-"] {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+/* Change the color of the active tab */
+.title-3qD0b-,
+.title-3qD0b-.selected-3s45Ha {
+  color: #fff !important;
 }
 
-/* Hover Effect */
-div[class^="container-"]:hover,
-div[class^="messagesWrapper-"]:hover,
-div[class^="members-"]:hover,
-div[class^="wrapper-"]:hover,
-div[class^="editor-"]:hover,
-div[class^="textArea-"]:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+/* Remove the gray background behind the emoji menu */
+.emojiPicker-3m1S-j .popout-2AR8Fa {
+  background-color: transparent !important;
 }
 
-/* Custom Japan-themed Icons */
-div[class^="wrapper-"] .iconDefault-2Kc0QG {
-  background-image: url("https://cdn.discordapp.com/attachments/879258158784800000/894586641783767552/6526177.png");
+/* Change the color of the unread messages badge */
+.unread-2lAfCW .number-1G1BiS {
+  background-color: var(--main-color) !important;
 }
 
-div[class^="wrapper-"] .iconSelected-3HTNPd {
-  background-image: url("https://cdn.discordapp.com/attachments/879258158784800000/894586641783767552/6526177.png");
+/* Change the color of the icon next to unread messages */
+.unread-2lAfCW .icon-3Gkjwa {
+  color: var(--main-color) !important;
 }
 
-div[class^="members-"] .member-3-YXUe .avatar-1BXaQj {
-  background-image: url("https://cdn.discordapp.com/attachments/879258158784800000/894586555103418634/6526184.png");
+/* Change the color of the mention badge */
+.mentioned-2GQL18 .number-1G1BiS {
+  background-color: var(--main-color) !important;
 }
 
-div[class^="members-"] .member-3-YXUe .status-oxiHuE {
-  background-image: url("https://cdn.discordapp.com/attachments/879258158784800000/894586555103418634/6526184.png");
+/* Change the color of the icon next to mentioned messages */
+.mentioned-2GQL18 .icon-3Gkjwa {
+  color: var(--main-color) !important;
+}
+
+/* Change the color of the reaction emojis */
+.reaction-1hd86g {
+  color: var(--main-color) !important;
 }
