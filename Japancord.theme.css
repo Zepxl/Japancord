@@ -1,90 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
-
-:root {
-  --main-color: #e91e63; /* change this to your preferred color */
-}
-
-/* Background image */
-.appMount-3VJmYg {
-  background-image: url(https://raw.githubusercontent.com/Zepxl/Japancord/5d000b70c8051197f2f2418bae1bc7637493a10c/japan.jpg);
+/* Set the background image */
+.app {
+  background-image: url("https://example.com/japan.jpg");
   background-size: cover;
   background-position: center;
 }
 
-/* Change the font */
-*,
-*::before,
-*::after {
-  font-family: 'Noto Sans JP', sans-serif !important;
+/* Change the color of the top bar */
+.topBar {
+  background-color: #c63939;
 }
 
-/* Change the text color */
-.textArea-12jD-V,
-.content-98HsJk,
-.channelName-3k-EBI,
-.title-29uC1r {
-  color: var(--main-color) !important;
+/* Change the color of the server list */
+.guildsWrapper {
+  background-color: #f5f5f5;
 }
 
-/* Change the links color */
-.anchor-3Z-8Bb,
-.anchorUnderlineOnHover-2ESHQB {
-  color: var(--main-color) !important;
+/* Change the color of the chat channels */
+.chat-3bRxxu {
+  background-color: #fff;
 }
 
-/* Change the hover color */
-.anchor-3Z-8Bb:hover,
-.anchorUnderlineOnHover-2ESHQB:hover {
-  color: #fff !important;
+/* Add a subtle Japanese pattern as the chat background */
+.content-2UfXXS {
+  background-image: url("https://example.com/japanese-pattern.png");
+  background-size: 100px 100px;
+  background-repeat: repeat;
 }
 
-/* Change the user's status colors */
-.status-online,
-.status-idle,
-.status-dnd,
-.status-streaming {
-  color: var(--main-color) !important;
+/* Change the font to a Japanese-inspired font */
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 }
 
-/* Change the background of the active tab */
-.selected-3s45Ha,
-.tabBarSelected-1vrmpa,
-.tabBarSelected-1vrmpa:hover {
-  background-color: rgba(233, 30, 99, 0.2) !important;
-}
-
-/* Change the color of the active tab */
-.title-3qD0b-,
-.title-3qD0b-.selected-3s45Ha {
-  color: #fff !important;
-}
-
-/* Remove the gray background behind the emoji menu */
-.emojiPicker-3m1S-j .popout-2AR8Fa {
-  background-color: transparent !important;
-}
-
-/* Change the color of the unread messages badge */
-.unread-2lAfCW .number-1G1BiS {
-  background-color: var(--main-color) !important;
-}
-
-/* Change the color of the icon next to unread messages */
-.unread-2lAfCW .icon-3Gkjwa {
-  color: var(--main-color) !important;
-}
-
-/* Change the color of the mention badge */
-.mentioned-2GQL18 .number-1G1BiS {
-  background-color: var(--main-color) !important;
-}
-
-/* Change the color of the icon next to mentioned messages */
-.mentioned-2GQL18 .icon-3Gkjwa {
-  color: var(--main-color) !important;
-}
-
-/* Change the color of the reaction emojis */
-.reaction-1hd86g {
-  color: var(--main-color) !important;
+/* Set the font for all text */
+* {
+  font-family: 'Noto Sans JP', sans-serif;
 }
