@@ -1,0 +1,41 @@
+/* Japan themed Discord Theme */
+/* Background image */
+body::before {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("backround.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+}
+
+/* Change Discord colors */
+.theme-dark {
+  /* Main colors */
+  --background-primary: rgba(255, 255, 255, 0.05);
+  --background-secondary: rgba(255, 255, 255, 0.1);
+  --background-secondary-alt: rgba(255, 255, 255, 0.15);
+  --text-normal: #fff;
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --text-link: #fff;
+  --interactive-normal: #ff4081;
+  --interactive-hover: #ff80ab;
+  --interactive-active: #f50057;
+  --interactive-muted: rgba(255, 255, 255, 0.1);
+
+  /* Channels and categories */
+  --background-tertiary: rgba(255, 255, 255, 0.05);
+  --background-accent: rgba(255, 255, 255, 0.1);
+  --background-floating: rgba(255, 255, 255, 0.2);
+}
+
+/* Change font family */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
+body, button, input, select, textarea {
+  font-family: 'Noto Sans JP', sans-serif;
+}
