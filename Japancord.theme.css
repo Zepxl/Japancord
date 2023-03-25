@@ -8,7 +8,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("backrouund.jpg");
+  background-image: url("japan.jpg");
   background-size: cover;
   background-position: center;
   filter: blur(4px);
